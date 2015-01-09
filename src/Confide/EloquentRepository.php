@@ -105,8 +105,7 @@ class EloquentRepository implements RepositoryInterface
     public function getUserByEmailOrUsername($emailOrUsername)
     {
         $identity = [
-            'email' => $emailOrUsername,
-            'username' => $emailOrUsername
+            'email' => $emailOrUsername
         ];
 
         return $this->getUserByIdentity($identity);
